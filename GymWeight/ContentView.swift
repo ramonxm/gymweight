@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            Button("Change Theme") {
+            Button("Escolha o tema") {
                 changeTheme.toggle()
             }
             

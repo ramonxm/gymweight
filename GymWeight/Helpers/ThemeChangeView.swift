@@ -10,20 +10,19 @@ import SwiftUI
 struct ThemeChangeView: View {
     @Environment(\.colorScheme) private var scheme
     @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
-    
     @Namespace private var animation
+    
     var body: some View {
         VStack(spacing: 15) {
             Circle()
                 .fill(userTheme.color(scheme).gradient)
                 .frame(width: 150, height: 150)
             
-            Text("Choose Style")
+            Text("Escolha o estilo")
                 .font(.title2.bold())
                 .padding(.top, 25)
             
-            Text("Pop or subtle, Day or night.\nCustomize your interface.")
-                .multilineTextAlignment(.center)
+            Text("Personalize sua interface")
             
             HStack(spacing: 0) {
                 ForEach(Theme.allCases, id: \.rawValue) {
