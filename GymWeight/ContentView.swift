@@ -13,16 +13,9 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            Button("Escolha o tema") {
-                changeTheme.toggle()
-            }
+          ToggleTheme(isOn: $changeTheme)
             
         }
-        .sheet(isPresented: $changeTheme, content: {
-            ThemeChangeView()
-                .presentationDetents([.height(410)])
-                .presentationBackground(.clear)
-        })
     }
 
 
@@ -30,5 +23,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

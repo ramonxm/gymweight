@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC0950822C3F6C0800ADF49A /* ThemeChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0950812C3F6C0800ADF49A /* ThemeChangeView.swift */; };
+		BC0950892C4302E400ADF49A /* ToggleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0950882C4302E400ADF49A /* ToggleTheme.swift */; };
+		BC09508B2C4365FF00ADF49A /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09508A2C4365FF00ADF49A /* Moon.swift */; };
 		BC9771352C3CB497009B1C83 /* GymWeightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9771342C3CB497009B1C83 /* GymWeightApp.swift */; };
 		BC9771372C3CB497009B1C83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9771362C3CB497009B1C83 /* ContentView.swift */; };
-		BC9771392C3CB497009B1C83 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9771382C3CB497009B1C83 /* Item.swift */; };
 		BC97713B2C3CB498009B1C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97713A2C3CB498009B1C83 /* Assets.xcassets */; };
 		BC97713E2C3CB498009B1C83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97713D2C3CB498009B1C83 /* Preview Assets.xcassets */; };
 		BC9771482C3CB499009B1C83 /* GymWeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9771472C3CB499009B1C83 /* GymWeightTests.swift */; };
@@ -36,11 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC0950812C3F6C0800ADF49A /* ThemeChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeView.swift; sourceTree = "<group>"; };
+		BC0950882C4302E400ADF49A /* ToggleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTheme.swift; sourceTree = "<group>"; };
+		BC09508A2C4365FF00ADF49A /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
 		BC9771312C3CB497009B1C83 /* GymWeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymWeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9771342C3CB497009B1C83 /* GymWeightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymWeightApp.swift; sourceTree = "<group>"; };
 		BC9771362C3CB497009B1C83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BC9771382C3CB497009B1C83 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BC97713A2C3CB498009B1C83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC97713D2C3CB498009B1C83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC9771432C3CB499009B1C83 /* GymWeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymWeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,12 +75,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC09507E2C3F6BB400ADF49A /* Helpers */ = {
+		BC0950842C41DE1100ADF49A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				BC0950812C3F6C0800ADF49A /* ThemeChangeView.swift */,
+				BC0950852C41DE1800ADF49A /* Components */,
 			);
-			path = Helpers;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BC0950852C41DE1800ADF49A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC0950882C4302E400ADF49A /* ToggleTheme.swift */,
+				BC09508A2C4365FF00ADF49A /* Moon.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		BC9771282C3CB497009B1C83 = {
@@ -106,10 +115,9 @@
 		BC9771332C3CB497009B1C83 /* GymWeight */ = {
 			isa = PBXGroup;
 			children = (
-				BC09507E2C3F6BB400ADF49A /* Helpers */,
+				BC0950842C41DE1100ADF49A /* Core */,
 				BC9771342C3CB497009B1C83 /* GymWeightApp.swift */,
 				BC9771362C3CB497009B1C83 /* ContentView.swift */,
-				BC9771382C3CB497009B1C83 /* Item.swift */,
 				BC97713A2C3CB498009B1C83 /* Assets.xcassets */,
 				BC97713C2C3CB498009B1C83 /* Preview Content */,
 			);
@@ -271,9 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC0950822C3F6C0800ADF49A /* ThemeChangeView.swift in Sources */,
 				BC9771372C3CB497009B1C83 /* ContentView.swift in Sources */,
-				BC9771392C3CB497009B1C83 /* Item.swift in Sources */,
+				BC0950892C4302E400ADF49A /* ToggleTheme.swift in Sources */,
+				BC09508B2C4365FF00ADF49A /* Moon.swift in Sources */,
 				BC9771352C3CB497009B1C83 /* GymWeightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
