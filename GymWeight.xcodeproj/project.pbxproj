@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC0950892C4302E400ADF49A /* ToggleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0950882C4302E400ADF49A /* ToggleTheme.swift */; };
-		BC09508B2C4365FF00ADF49A /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09508A2C4365FF00ADF49A /* Moon.swift */; };
+		BC4ADD352C50827C009E262A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4ADD342C50827C009E262A /* HomeView.swift */; };
+		BC4ADD372C508C05009E262A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4ADD362C508C05009E262A /* User.swift */; };
+		BC4ADD392C508C91009E262A /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4ADD382C508C91009E262A /* AvatarView.swift */; };
 		BC9771352C3CB497009B1C83 /* GymWeightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9771342C3CB497009B1C83 /* GymWeightApp.swift */; };
-		BC9771372C3CB497009B1C83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9771362C3CB497009B1C83 /* ContentView.swift */; };
 		BC97713B2C3CB498009B1C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97713A2C3CB498009B1C83 /* Assets.xcassets */; };
 		BC97713E2C3CB498009B1C83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97713D2C3CB498009B1C83 /* Preview Assets.xcassets */; };
 		BC9771482C3CB499009B1C83 /* GymWeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9771472C3CB499009B1C83 /* GymWeightTests.swift */; };
@@ -36,11 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC0950882C4302E400ADF49A /* ToggleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTheme.swift; sourceTree = "<group>"; };
-		BC09508A2C4365FF00ADF49A /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		BC4ADD342C50827C009E262A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BC4ADD362C508C05009E262A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC4ADD382C508C91009E262A /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		BC9771312C3CB497009B1C83 /* GymWeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymWeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9771342C3CB497009B1C83 /* GymWeightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymWeightApp.swift; sourceTree = "<group>"; };
-		BC9771362C3CB497009B1C83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC97713A2C3CB498009B1C83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC97713D2C3CB498009B1C83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC9771432C3CB499009B1C83 /* GymWeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymWeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,21 +75,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC0950842C41DE1100ADF49A /* Core */ = {
+		BC4ADD322C508226009E262A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BC0950852C41DE1800ADF49A /* Components */,
+				BC4ADD342C50827C009E262A /* HomeView.swift */,
+				BC4ADD382C508C91009E262A /* AvatarView.swift */,
 			);
-			path = Core;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		BC0950852C41DE1800ADF49A /* Components */ = {
+		BC4ADD332C508234009E262A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BC0950882C4302E400ADF49A /* ToggleTheme.swift */,
-				BC09508A2C4365FF00ADF49A /* Moon.swift */,
+				BC4ADD362C508C05009E262A /* User.swift */,
 			);
-			path = Components;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BC9771282C3CB497009B1C83 = {
@@ -115,9 +115,9 @@
 		BC9771332C3CB497009B1C83 /* GymWeight */ = {
 			isa = PBXGroup;
 			children = (
-				BC0950842C41DE1100ADF49A /* Core */,
+				BC4ADD332C508234009E262A /* Models */,
+				BC4ADD322C508226009E262A /* Views */,
 				BC9771342C3CB497009B1C83 /* GymWeightApp.swift */,
-				BC9771362C3CB497009B1C83 /* ContentView.swift */,
 				BC97713A2C3CB498009B1C83 /* Assets.xcassets */,
 				BC97713C2C3CB498009B1C83 /* Preview Content */,
 			);
@@ -279,10 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9771372C3CB497009B1C83 /* ContentView.swift in Sources */,
-				BC0950892C4302E400ADF49A /* ToggleTheme.swift in Sources */,
-				BC09508B2C4365FF00ADF49A /* Moon.swift in Sources */,
 				BC9771352C3CB497009B1C83 /* GymWeightApp.swift in Sources */,
+				BC4ADD392C508C91009E262A /* AvatarView.swift in Sources */,
+				BC4ADD352C50827C009E262A /* HomeView.swift in Sources */,
+				BC4ADD372C508C05009E262A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,10 @@ struct GymWeightApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+              HomeView()
+            }
+
         }
     }
 }
